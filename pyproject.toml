@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "service-sls-extract-pdf"
+version = "0.1.0"
+description = ""
+authors = ["Elder Vivot <eldervivot@gmail.com>"]
+readme = "README.md"
+packages = [{include = "service_sls_extract_pdf"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.8.4"
+pymupdf = "^1.22.5"
+requests = "^2.31.0"
+pdftotext = "^2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.2.0"
+flake8 = "^6.0.0"
+autopep8 = "^2.0.2"
+boto3 = "^1.26.123"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
